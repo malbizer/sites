@@ -1,0 +1,257 @@
+.container {
+    width: 100%;
+    height: fit-content;
+    background-image: url("../../../assets/images/home.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain 100%;
+    background-attachment: fixed;
+    border: 0;
+}
+
+.back {
+    background: #0f0f0f98;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.logo {
+    position: fixed;
+    img {
+        width: 355px;
+        float: left;
+        margin-left: 50px;
+        filter: drop-shadow(0px 0px 0px rgb(228, 227, 227));
+    }
+}
+
+#menu {
+    font-family: "Fauna";
+    font-size: 18px;
+    color: white;
+    margin-left: 500px;
+    margin-top: 35px;
+    width: fit-content;
+    position: fixed;
+    .item {
+        padding: 10px;
+        float: left;
+        margin-left: 30px;
+    }
+    .item:hover {
+        font-weight: bold;
+        cursor: pointer;
+        .icon {
+            filter: drop-shadow(0px 0px 1px rgb(228, 227, 227));
+        }
+    }
+    .select {
+        border: 2px solid white;
+        border-radius: 5px;
+        width: fit-content;
+    }
+    .icon {
+        img {
+            width: 25px;
+        }
+    }
+}
+
+#top {
+    height: 120px;
+    position: fixed;
+    width: 100%;
+    z-index: 999999;
+}
+
+.roll {
+    height: 70px !important;
+    position: fixed;
+    background-color: #00000093;
+    animation: roll 0.5s;
+    .logo {
+        img {
+            width: 228px !important;
+            animation: surge 3s;
+            filter: drop-shadow(0px 0px 2px rgb(228, 227, 227));
+        }
+    }
+    #menu {
+        animation: menuleft 0.5s;
+        margin-left: 300px;
+        margin-top: 14px;
+    }
+}
+
+.unroll {
+    height: 120px !important;
+    position: fixed;
+    background-color: #00000000;
+    animation: roll 0.3s reverse;
+    .logo {
+        img {
+            width: 355px !important;
+            animation: surge 3s;
+        }
+    }
+    #menu {
+        animation: menuleft 0.5s reverse;
+        margin-left: 500px;
+        margin-top: 35px;
+    }
+}
+
+@keyframes roll {
+    from {
+        height: 120px;
+    }
+    to {
+        height: 70px;
+    }
+}
+
+@keyframes menuleft {
+    from {
+        margin-left: 500px;
+        margin-top: 35px;
+    }
+    to {
+        margin-left: 300px;
+        margin-top: 14px;
+    }
+}
+
+#defines {
+    padding-top: 220px;
+    text-align: center;
+    font-family: "Fauna";
+    color: white;
+    font-size: 70px;
+    -webkit-animation: surge 2.5s;
+    animation: surge 2.5s;
+    height: 100vh;
+    .muta {
+        margin-bottom: 70px;
+    }
+    strong {
+        animation: blink 0.3s infinite;
+    }
+}
+
+#about {
+    width: 100%;
+    background-color: #0f0f0f5e;
+    min-height: 100vh;
+    webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    .descricao {
+        color: #ffffff;
+        font-family: "Fauna";
+        font-size: 18px;
+        padding: 50px;
+        width: 40vw;
+        text-align: justify;
+        line-height: 1.8;
+        padding-top: 30vh;
+        float: left;
+    }
+    .animation {
+        float: left;
+        padding-top: 15vh;
+        padding-left: 4vw;
+    }
+}
+
+#service {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 70px;
+    text-align: center;
+    min-height: 100vh;
+    .item {
+        display: grid;
+        grid-template-rows: 200px 1fr;
+        webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+        background-color: #0f0f0f5e;
+        font-family: "Fauna";
+        font-size: 15px;
+        margin: 15px;
+        color: #ffffff;
+        height: 435px;
+        padding: 15px;
+        border-radius: 15px;
+        .text {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        .icon {
+            text-align: center;
+        }
+    }
+}
+
+#portfolio {
+    width: 100%;
+    background-color: #0f0f0f5e;
+    min-height: 100vh;
+    webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    #t1{
+        display: block;
+        animation: surge 2.2s;
+    }
+    #t2{
+        display: none;
+        animation: surge 2.2s;
+    }
+    #t3{
+        display: none;
+        animation: surge 2.2s;
+    }
+    .portfolio {
+        display: grid;
+        grid-template-columns: 70px 1fr 70px;
+        .icon {
+            img {
+                transform: translateY(50vh);
+                position: absolute;
+                cursor: pointer;
+            }
+            #backicon:hover {
+                cursor: pointer;
+            }
+            #goicon:hover {
+                cursor: pointer;
+            }
+        }
+        .icon:hover {
+            cursor: pointer;
+        }
+        .contain {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            .descricao {
+                color: #ffffff;
+                font-family: "Fauna";
+                font-size: 18px;
+                padding: 50px;
+                width: 40vw;
+                text-align: justify;
+                line-height: 1.8;
+                padding-top: 30vh;
+                float: left;
+            }
+        }
+
+        .image {
+            float: right;
+            padding-top: 15vh;
+            padding-left: 4vw;
+            img {
+                width: 33vw;
+            }
+        }
+    }
+}

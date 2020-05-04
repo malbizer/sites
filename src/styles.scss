@@ -1,1 +1,74 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+@keyframes shadow {
+    0% {
+        filter: drop-shadow(1px 3px 15px rgba(255, 254, 254, 0.3));
+    }
+    50% {
+        filter: drop-shadow(1px 3px 15px rgba(255, 254, 254, 0.8));
+    }
+    100% {
+        filter: drop-shadow(1px 3px 15px rgba(255, 254, 254, 0.3));
+    }
+}
+
+@keyframes surge {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.link {
+    cursor: pointer;
+}
+.link:hover {
+    text-decoration: underline;
+}
+
+@font-face {
+    font-family: "Ocean";
+    src: url("./assets/fonts/Ocean\ Medium.ttf"); /* IE9 Compat Modes */
+    src: url("./assets/fonts/Ocean\ Medium.ttf") format("embedded-opentype"),
+        url("./assets/fonts/Ocean\ Medium.ttf") format("woff2"), url("./assets/fonts/Ocean\ Medium.ttf") format("woff"),
+        url("./assets/fonts/Ocean\ Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Volkorn";
+    src: url("./assets/fonts/Vollkorn-Regular.ttf"); /* IE9 Compat Modes */
+    src: url("./assets/fonts/Vollkorn-Regular.ttf") format("embedded-opentype"),
+        url("./assets/fonts/Vollkorn-Regular.ttf") format("woff2"),
+        url("./assets/fonts/Vollkorn-Regular.ttf") format("woff"),
+        url("./assets/fonts/Vollkorn-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Fauna";
+    src: url("./assets/fonts/fauna.ttf"); /* IE9 Compat Modes */
+    src: url("./assets/fonts/fauna.ttf") format("embedded-opentype"), url("./assets/fonts/fauna.ttf") format("woff2"),
+        url("./assets/fonts/fauna.ttf") format("woff"), url("./assets/fonts/fauna.ttf") format("truetype");
+}

@@ -1,0 +1,47 @@
+#malbizer {
+    background: #1a1818;
+    animation: back 2s infinite;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    img {
+        position: absolute;
+        width: 30%;
+        top: 23vh;
+        left: 35vw;
+        animation: shadow 2s infinite;
+    }
+    .contato {
+        position: absolute;
+        bottom: 8px;
+        text-align: center;
+        width: 100%;
+        color: #eeeded;
+    }
+}
+
+
+
+@keyframes back {
+    0% {
+        background: radial-gradient(circle, #1a1818 11%, #201e1e 0%, #353232 2%, #201e1e 18%, #1a1818 37%);
+    }
+    15% {
+        background: radial-gradient(circle, #1a1818 11%, #201e1e 0%, #353232 2%, #201e1e 18%, #1a1818 38%);
+    }
+    35% {
+        background: radial-gradient(circle, #1a1818 11%, #201e1e 0%, #353232 2%, #201e1e 18%, #1a1818 39%);
+    }
+    50% {
+        background: radial-gradient(circle, #1a1818 11%, #201e1e 0%, #353232 2%, #201e1e 18%, #1a1818 40%);
+    }
+    65% {
+        background: radial-gradient(circle, #1a1818 11%, #201e1e 0%, #353232 2%, #201e1e 18%, #1a1818 39%);
+    }
+    75% {
+        background: radial-gradient(circle, #1a1818 11%, #201e1e 0%, #353232 2%, #201e1e 18%, #1a1818 38%);
+    }
+    100% {
+        background: radial-gradient(circle, #1a1818 11%, #201e1e 0%, #353232 2%, #201e1e 18%, #1a1818 37%);
+    }
+}
